@@ -1,0 +1,67 @@
+{
+  "policy_details": [
+    {
+      "Sn": 1,
+      "Policy Holder": "Vijayakumar M R",
+      "Policy Number": 354502267,
+      "Last Payment": "28/8/2020",
+      "Maturity Date": "28/8/2021"
+    },
+    {
+      "Sn": 2,
+      "Policy Holder": "Vijayakumar M R",
+      "Policy Number": 352247859,
+      "Last Payment": "13/4/2021",
+      "Maturity Date": "13/4/2021"
+    },
+    {
+      "Sn": 3,
+      "Policy Holder": "Vijayakumar M R",
+      "Policy Number": 354511809,
+      "Last Payment": "25/9/2021",
+      "Maturity Date": "25/9/2022"
+    },
+    {
+      "Sn": 4,
+      "Policy Holder": "Vijayakumar M R",
+      "Policy Number": 301400205,
+      "Last Payment": "28/9/2022",
+      "Maturity Date": "28/9/2023"
+    },
+    {
+      "Sn": 5,
+      "Policy Holder": "Vijayakumar M R",
+      "Policy Number": 352230951,
+      "Last Payment": "21/1/2023",
+      "Maturity Date": "21/1/2024"
+    },
+    {
+      "Sn": 6,
+      "Policy Holder": "Pruthe M V",
+      "Policy Number": 301400204,
+      "Last Payment": "28/9/2022",
+      "Maturity Date": "28/9/2023"
+    },
+    {
+      "Sn": 7,
+      "Policy Holder": "Pruthe M V",
+      "Policy Number": 354511810,
+      "Last Payment": "25/9/2021",
+      "Maturity Date": "25/9/2022"
+    },
+    {
+      "Sn": 8,
+      "Policy Holder": "Pruthe M V",
+      "Policy Number": 354502266,
+      "Last Payment": "28/9/2020",
+      "Maturity Date": "29/9/2021"
+    },
+    {
+      "Sn": 9,
+      "Policy Holder": "Kartikey V Hebbar",
+      "Policy Number": 354520752,
+      "Last Payment": "28/7/2042",
+      "Maturity Date": "28/7/2043"
+    }
+  ]
+}
