@@ -7,17 +7,29 @@ def message(msg):
 
     url = "https://www.fast2sms.com/dev/bulk"
 
-    config = configparser.ConfigParser()
-    config.read('application.properties')
-
     #payload = "sender_id=FSTSMS&message=hello&language=english&route=p&numbers=9993097022,9686055388,9826265314"
-    payload = {
+    payload1 = {
         'sender_id': 'FSTSMS',
         'message': msg,
         'language': 'english',
         'route': 'p',
-        #'numbers': '9993097022, 9686055388, 9826265314'
-        'numbers': '9686055388, 9993097022, 9826265314'
+        'numbers': '9686055388'
+    }
+
+    payload2 = {
+        'sender_id': 'FSTSMS',
+        'message': msg,
+        'language': 'english',
+        'route': 'p',
+        'numbers': '9993097022'
+    }
+
+    payload3 = {
+        'sender_id': 'FSTSMS',
+        'message': msg,
+        'language': 'english',
+        'route': 'p',
+        'numbers': '9826265314'
     }
 
     headers = {
@@ -25,8 +37,12 @@ def message(msg):
         'Content-Type': "application/x-www-form-urlencoded",
         'Cache-Control': "no-cache",
     }
-    response = requests.request("POST", url, data=payload, headers=headers)
+    response = requests.request("POST", url, data=payload1, headers=headers)
+    print(response.text)
+    response = requests.request("POST", url, data=payload2, headers=headers)
+    print(response.text)
+    response = requests.request("POST", url, data=payload3, headers=headers)
     print(response.text)
     return
 
-message("Test")
+#message("Test")

@@ -2,6 +2,7 @@ import json
 
 from days_calculator import calculate_delta
 from messaging import message
+from writer import clear_file, append_string, show_file
 
 def main():
     #convert all print statements to logger statements
@@ -11,25 +12,17 @@ def main():
     # return json object as dictionary
     data = json.load(file)
 
+    # clear the message_string file beforehand
+    clear_file()
+
     #iterate through file
     for i in data['policy_details']:
         days_left = calculate_delta(i)
 
-        msg = "Policy for " + i['Policy Holder'] + " with number: " + str(i['Policy Number']) + " will mature in " + str(days_left) + ", on " + i['Maturity Date']
+        if(days_left<60 and days_left>=0):
+            msg = "Policy for " + i['Policy Holder'] + " with number: " + str(i['Policy Number']) + " will mature in " + str(days_left) + " days, on " + i['Maturity Date']
+            append_string(msg)
 
-        if(days_left>30 and days_left<=60 and days_left%5 == 0):
-            # send mail and sms once in 5 days
-            pass
-
-        elif(days_left>10 and days_left<=30 and days_left%3 == 0):
-            # send sms once in 3 days
-            message(msg)
-
-        elif(days_left>=0 and days_left<=10):
-            # send sms and mail daily
-            pass
-
-        else:
-            pass
+    message(show_file())
 
 main()
